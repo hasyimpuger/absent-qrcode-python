@@ -9,7 +9,7 @@ os.environ["OPENCV_FFMPEG_CAPTURE_OPTIONS"] = "rtsp_transport;udp"
 class Scanner(object):
     def __init__(self):
         # Change your RSTP IP for your another device, make sure same network
-        self.cap = cv2.VideoCapture("rtsp://192.168.100.9:5554", cv2.CAP_FFMPEG)
+        self.cap = cv2.VideoCapture("rtsp://YOUR_IP_ADDRESS:YOUR_PORT", cv2.CAP_FFMPEG)
         self.transformed_frame = None
 
     def __del__(self):
